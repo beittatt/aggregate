@@ -27,7 +27,7 @@ public class AdminTabUI extends AggregateTabBase {
     // build the UI
     PermissionsSubTab permissionsSubTab = new PermissionsSubTab();
     addSubTab(permissionsSubTab, SubTabs.PERMISSIONS);
-    addSubTab(new PreferencesSubTab(), SubTabs.PREFERENCES);
+//    addSubTab(new PreferencesSubTab(), SubTabs.PREFERENCES);
 
     // register handler to manage tab selection change (and selecting our tab)
     registerClickHandlers(Tabs.ADMIN, baseUI);

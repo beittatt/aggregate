@@ -40,7 +40,7 @@
 .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleRight,
 .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopCenter,
 .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
-	background: #07115A;
+	background: #1976d2;
 	color: #f5bb30;
 }
 * html .gwt-DecoratedTabBar .tabTopLeftInner,
@@ -66,7 +66,7 @@
 	width: 98px;
 }
 .gwt-TabBar {
-	background: #07115A;
+	background: #1976d2;
 }
 .gwt-TabBarItem {
 	color: #dfdfdf;

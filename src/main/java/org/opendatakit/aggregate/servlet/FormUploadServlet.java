@@ -282,7 +282,7 @@ public class FormUploadServlet extends ServletUtilBase {
                 + "<p><b>All these value fields have been declared as string values.</b> It will use "
                 + "lexical ordering on those fields.  E.g., the value 100 will be considered less than 11.</p>"
                 + "<p><font color=\"red\">If these value fields hold date, dateTime, time or numeric data (e.g., decimal or int), then "
-                + "ODK Aggregate will produce erroneous sortings and erroneous filtering results against those value fields.</font></p>"
+                + "digi Aggregate will produce erroneous sortings and erroneous filtering results against those value fields.</font></p>"
                 + "<table><th><td>Field Name</td></th>");
             out.write(warnings.toString());
             out.write("</table>");
@@ -310,7 +310,7 @@ public class FormUploadServlet extends ServletUtilBase {
                 + "<p><b>All these value fields have been declared as string values.</b> It will use "
                 + "lexical ordering on those fields.  E.g., the value 100 will be considered less than 11.</p>"
                 + "<p><font color=\"red\">If these value fields hold date, dateTime, time or numeric data (e.g., decimal or int), then "
-                + "ODK Aggregate will produce erroneous sortings and erroneous filtering results against those value fields.</font></p>"
+                + "digi Aggregate will produce erroneous sortings and erroneous filtering results against those value fields.</font></p>"
                 + "<table><th><td>Field Name</td></th>");
             b.append(warnings.toString());
             b.append("</table>");

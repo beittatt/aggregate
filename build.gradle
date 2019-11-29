@@ -187,9 +187,9 @@ task("checkConf") {
 
   doLast {
     def missingFiles = [
-        "jdbc.properties",
+        /*"jdbc.properties",
         "security.properties",
-        "odk-settings.xml"
+        "odk-settings.xml"*/
     ].findAll({ filename -> !new File("${projectDir}/src/main/resources/${filename}").exists() })
     if (!missingFiles.isEmpty())
       if(!project.gradle.startParameter.taskRequests.args[0].any{it.contains("docker")}){

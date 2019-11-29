@@ -15,7 +15,7 @@
 	padding-left: 6px;
 	padding-right: 6px;
 	text-align: center;
-	background: #07115A;
+	background: #1976d2;
 	color: #a1abff;
 	font-weight: bold;
 }
@@ -23,7 +23,7 @@
 	border-collapse: collapse;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #07115A;
+	border-color: #1976d2;
 }
 
 .exportTable td {
@@ -45,6 +45,6 @@
 	border-collapse: collapse;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #07115A;
+	border-color: #1976d2;
 	width:100%;
 }

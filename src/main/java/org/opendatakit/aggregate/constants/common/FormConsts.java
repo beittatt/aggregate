@@ -41,7 +41,7 @@ public enum FormConsts implements HelpSliderConsts {
       "       2.  Stream only - This will only send new data after the service is created.  No old data will be sent." +
       "       3.  Both will send both old and new data.<br>" +
       "   b.  Press \"Publish\".<br>" +
-      "   c.  Press \"Grant Access\" so that ODK Aggregate is allowed to make the file.<br>" +
+      "   c.  Press \"Grant Access\" so that digi Aggregate is allowed to make the file.<br>" +
       "   d.  You can view your published document in Google Fusion Tables.<br>" +
       "2b.  If you chose Google Spreadsheet:<br>" +
       "   a.  Enter the desired name of the spreadsheet.<br>" +
@@ -50,7 +50,7 @@ public enum FormConsts implements HelpSliderConsts {
       "       2.  Stream only - This will only send new data after the service is created.  No old data will be sent.<br>" +
       "       3.  Both will send both old and new data.<br>" +
       "   c.  Press \"Publish\".<br>" +
-      "   d.  Press \"Grant Access\" so that ODK Aggregate is allowed to make the file.<br>" +
+      "   d.  Press \"Grant Access\" so that digi Aggregate is allowed to make the file.<br>" +
       "   e.  You can view your published document in Google Docs."),
   EXPORT("Export", "This allows you to view your data in either Microsoft Excel, or in a Google Map.<br>" +
       "1.  Choose whether you want to export to a .csv file, or a .kml file.<br>" +

@@ -1,5 +1,5 @@
 h1,h2,h2,p {
-	font-family: 'Arial Unicode MS', Arial, sans-serif;
+	font-family: 'calibri', Arial, sans-serif;
 }
 
 body,table td,select {
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-	color: #07115A;
+	color: #1976d2;
 	margin-top: 15px;
 	font-size: xx-large;
 }
@@ -48,12 +48,12 @@ p {
 }
 
 .definedValue {
-	color: #0044A7;
+	color: #1976d2;
 }
 
 .indentedEntryRegion {
 	padding-left: 20px;
-	font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-family: "calibri", Tahoma, Arial, Verdana, sans-serif;
 	font-size: 80%;
 	font-weight: bold;
 }
@@ -74,7 +74,7 @@ a,a:visited,a:hover {
 
 .gwt-PopupPanel {
 	padding: 3px;
-	border: 2px solid #777984;
+	border: 2px solid #1976d2;
 	background: url("images/mostly_opaque.png");
 	z-index: 2000;
 }
@@ -160,7 +160,7 @@ a,a:visited,a:hover {
 */
 .flexTableBorderTopStretchWidth {
 	padding: 3px;
-	border-top: 1px solid #777984;
+	border-top: 1px solid #1976d2;
 	width: 100%;
 }
 
@@ -169,7 +169,7 @@ a,a:visited,a:hover {
 }
 
 .help_panel td {
-	border: 1px solid #07115A;
+	border: 1px solid #1976d2;
 	width: 100%;
 	padding: 2px 4px 2px 4px;
 }
@@ -269,7 +269,7 @@ a,a:visited,a:hover {
 	text-align:right;
 }
 #form_name {
-	color: #07115A;
+	color: #1976d2;
 	margin-top: 0px;
 	padding-top: 0px;
 	margin-bottom: 0px;
@@ -286,15 +286,15 @@ a,a:visited,a:hover {
 
 #submission_nav_table {
 	width: 100%;
-	border-bottom: 1px solid #07115A;
+	border-bottom: 1px solid #1976d2;
 }
 
 #filters_container {
-	border-right: 1px solid #07115A;
+	border-right: 1px solid #1976d2;
 }
 
 #help_panel {
-	border-top: 1px solid #07115A;
+	border-top: 1px solid #1976d2;
 }
 
 .form_title_bar td {
@@ -304,9 +304,9 @@ a,a:visited,a:hover {
 	align: center;
 }
 .app_version_string {
-	font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-family: "calibri", Tahoma, Arial, Verdana, sans-serif;
 	font-size: 80%;
 	font-weight: bold;
 	padding-left: 20px;
-	color: #0044A7;
+	color: #1976d2;
 }

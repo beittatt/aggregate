@@ -46,7 +46,7 @@ public class Realm implements InitializingBean {
   @Override
   public void afterPropertiesSet() {
     if (realmString == null) {
-      throw new IllegalStateException("realmString (e.g., mydomain.org ODK Aggregate 1.0) must be specified");
+      throw new IllegalStateException("realmString (e.g., mydomain.org digi Aggregate 1.0) must be specified");
     }
     Logger log = LoggerFactory.getLogger(Realm.class);
     log.info("Version: " + BuildConfig.VERSION);

@@ -38,7 +38,7 @@ public class ClearSessionThenLoginServlet extends ServletUtilBase {
    */
 
   public static final String ADDR = "relogin.html";
-  public static final String TITLE_INFO = "ODK Aggregate";
+  public static final String TITLE_INFO = "digi Aggregate";
   private static final long serialVersionUID = 629046684126101848L;
 
   @Override

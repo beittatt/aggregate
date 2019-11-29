@@ -68,7 +68,7 @@
       <name>aggregate_dir</name>
       <description>Hidden value defining the subdirectory in which to install files.</description>
       <explanation></explanation>
-      <value>ODK Aggregate</value>
+      <value>digi Aggregate</value>
       <default></default>
       <allowEmptyValue>0</allowEmptyValue>
       <ask>0</ask>
@@ -79,9 +79,9 @@
       <name>parent_installdir</name>
       <title>Select an output parent directory</title>
       <description></description>
-      <explanation><![CDATA[This "installer" does not actually install anything. Instead, it guides you through configuring ODK Aggregate. As the last step of the installer, it will either launch the upload tool for uploading to Google's AppEngine cloud services or open a README.html containing the final installation instructions for MySQL or PostgreSQL deployments.
+      <explanation><![CDATA[This "installer" does not actually install anything. Instead, it guides you through configuring digi Aggregate. As the last step of the installer, it will either launch the upload tool for uploading to Google's AppEngine cloud services or open a README.html containing the final installation instructions for MySQL or PostgreSQL deployments.
 
-Please select the parent directory under which an 'ODK Aggregate' directory will be created to contain the configured software.]]></explanation>
+Please select the parent directory under which an 'digi Aggregate' directory will be created to contain the configured software.]]></explanation>
       <value></value>
       <default></default>
       <allowEmptyValue>0</allowEmptyValue>
@@ -119,7 +119,7 @@ Please select the parent directory under which an 'ODK Aggregate' directory will
       <name>platform</name>
       <title>Choose Platform</title>
       <description></description>
-      <explanation><![CDATA[Choose the data storage and execution environment on which you would like ODK Aggregate to run. If you choose MySQL, PostgreSQL or Microsoft SQL Server (or Microsoft Azure SQL Server), you will need to first install that database server and an Apache Tomcat 8 webserver.
+      <explanation><![CDATA[Choose the data storage and execution environment on which you would like digi Aggregate to run. If you choose MySQL, PostgreSQL or Microsoft SQL Server (or Microsoft Azure SQL Server), you will need to first install that database server and an Apache Tomcat 8 webserver.
 
 NOTE: If you want to use the Microsoft Azure SQL Server, you must configure Tomcat 8 to use Java 8.]]></explanation>
       <value></value>
@@ -167,7 +167,7 @@ NOTE: If you want to use the Microsoft Azure SQL Server, you must configure Tomc
       <name>infoTomcat</name>
       <title>Pre-installation Requirements - Apache Tomcat</title>
       <description>http://tomcat.apache.org/download-80.cgi</description>
-      <explanation><![CDATA[Before continuing, you should download and install an Apache Tomcat 8 webserver within which you will run ODK Aggregate (instructions on installing your chosen database will be presented later).
+      <explanation><![CDATA[Before continuing, you should download and install an Apache Tomcat 8 webserver within which you will run digi Aggregate (instructions on installing your chosen database will be presented later).
 
 Apache Tomcat 8 can be downloaded from the link below.
 
@@ -246,9 +246,9 @@ Security breaches are particularly likely over unsecured WiFi hotspots.]]></desc
     <parameterGroup>
       <name>tomcat_port_choice</name>
       <title>Apache Tomcat Port Configuration</title>
-      <explanation><![CDATA[ODK Aggregate needs to know the port numbers and the Internet-visible IP address or DNS name through which it can be reached in order to construct links back to its content when publishing or exporting data files.
+      <explanation><![CDATA[digi Aggregate needs to know the port numbers and the Internet-visible IP address or DNS name through which it can be reached in order to construct links back to its content when publishing or exporting data files.
 
-Follow the ODK Aggregate Tomcat Install instructions (link below) to make your computer accessible on the web (using an Internet-visible IP address) and to establish a DNS name.]]>
+Follow the digi Aggregate Tomcat Install instructions (link below) to make your computer accessible on the web (using an Internet-visible IP address) and to establish a DNS name.]]>
       </explanation>
       <value></value>
       <default></default>
@@ -300,7 +300,7 @@ Follow the ODK Aggregate Tomcat Install instructions (link below) to make your c
         </stringParameter>
         <labelParameter>
           <name>hostname_label_optional</name>
-          <explanation>ODK Aggregate will try to resolve an IP address or DNS name for you if you leave this field empty.</explanation>
+          <explanation>digi Aggregate will try to resolve an IP address or DNS name for you if you leave this field empty.</explanation>
           <ruleList>
             <compareText>
               <logic>equals</logic>
@@ -313,7 +313,7 @@ Follow the ODK Aggregate Tomcat Install instructions (link below) to make your c
           <name>hostname_label_warning</name>
           <explanation><![CDATA[Make sure you provide an IP address or DNS name matching your SSL certificate.
 
-ODK Aggregate will try to resolve an IP address or DNS name for you if you leave this field empty, but this can be unreliable in SSL configurations.]]></explanation>
+digi Aggregate will try to resolve an IP address or DNS name for you if you leave this field empty, but this can be unreliable in SSL configurations.]]></explanation>
           <ruleList>
             <compareText>
               <logic>equals</logic>
@@ -554,8 +554,8 @@ If the database server is on the same host as the webserver, enter '127.0.0.1']]
     </parameterGroup>
     <parameterGroup>
       <name>database_config_part_1</name>
-      <title>ODK Aggregate database authentication settings</title>
-      <explanation><![CDATA[The database server must be configured with an account (username and password) that ODK Aggregate will employ for accessing the database server. This is not an account that you will give to anyone; it is only for use by the ODK Aggregate webserver. Username and password should be alphanumeric strings beginning with a letter (no spaces or punctuation please!).
+      <title>digi Aggregate database authentication settings</title>
+      <explanation><![CDATA[The database server must be configured with an account (username and password) that digi Aggregate will employ for accessing the database server. This is not an account that you will give to anyone; it is only for use by the digi Aggregate webserver. Username and password should be alphanumeric strings beginning with a letter (no spaces or punctuation please!).
 
 The installer will generate a script that can be run on the database server to establish the required configuration.]]></explanation>
       <value></value>
@@ -602,8 +602,8 @@ The installer will generate a script that can be run on the database server to e
     </parameterGroup>
     <parameterGroup>
       <name>database_config_part_2</name>
-      <title>ODK Aggregate database datastore settings</title>
-      <explanation><![CDATA[The database server must be configured with a workspace identified by a database name, and, if using Postgresql, a schema name. This workspace is where ODK Aggregate will store uploaded forms, submissions and other information. The database name (and schema name for Postgresql) can be any alphanumeric strings beginning with a letter; underscores (_) are OK (no spaces or punctuation please!).
+      <title>digi Aggregate database datastore settings</title>
+      <explanation><![CDATA[The database server must be configured with a workspace identified by a database name, and, if using Postgresql, a schema name. This workspace is where digi Aggregate will store uploaded forms, submissions and other information. The database name (and schema name for Postgresql) can be any alphanumeric strings beginning with a letter; underscores (_) are OK (no spaces or punctuation please!).
 
 The installer will generate a script that can be run on the database server to create the workspace.]]></explanation>
       <value></value>
@@ -656,7 +656,7 @@ The installer will generate a script that can be run on the database server to c
     </parameterGroup>
     <parameterGroup>
       <name>database_config_sqlserver_1</name>
-      <title>ODK Aggregate database datastore settings</title>
+      <title>digi Aggregate database datastore settings</title>
       <explanation><![CDATA[A database and schema must be created on the Microsoft SQL Server database server. All uploaded forms, submissions and other information will be stored in this schema within this database. The database name (and schema name) can be any alphanumeric strings beginning with a letter; underscores (_) are OK (no spaces or punctuation please!). The installer will generate a script that can be run on the database server to create the database.
 
 The Windows user or group will be granted the permissions to manage and write into this schema.]]></explanation>
@@ -703,7 +703,7 @@ The Windows user or group will be granted the permissions to manage and write in
     </parameterGroup>
     <parameterGroup>
       <name>database_config_sqlserver_2</name>
-      <title>ODK Aggregate database datastore settings</title>
+      <title>digi Aggregate database datastore settings</title>
       <explanation>
         <![CDATA[The Microsoft SQL Server and Azure SQL Server database driver requires that you specify the full JDBC URL for accessing this database. See Microsoft documentation for how to construct this URL.]]></explanation>
       <value></value>
@@ -738,11 +738,11 @@ The Windows user or group will be granted the permissions to manage and write in
     </parameterGroup>
     <stringParameter>
       <name>instance_display_name</name>
-      <title>ODK Aggregate Instance Name</title>
+      <title>digi Aggregate Instance Name</title>
       <description>Please enter the name of your instance:</description>
-      <explanation><![CDATA[The ODK Aggregate instance name will be displayed to your users when they log into ODK Aggregate using their ODK Aggregate username and password. Including the name of your organization in the instance name can help users confirm that they have contacted the correct website.
+      <explanation><![CDATA[The digi Aggregate instance name will be displayed to your users when they log into ODK Aggregate using their ODK Aggregate username and password. Including the name of your organization in the instance name can help users confirm that they have contacted the correct website.
 
-NOTE: During subsequent upgrades, any changes to this text will invalidate all the ODK Aggregate passwords configured on your webserver. To prevent disruptions during upgrades, please make a record of the name you have chosen.]]></explanation>
+NOTE: During subsequent upgrades, any changes to this text will invalidate all the digi Aggregate passwords configured on your webserver. To prevent disruptions during upgrades, please make a record of the name you have chosen.]]></explanation>
       <value></value>
       <default></default>
       <allowEmptyValue>0</allowEmptyValue>
@@ -750,11 +750,11 @@ NOTE: During subsequent upgrades, any changes to this text will invalidate all t
     </stringParameter>
     <stringParameter>
       <name>username</name>
-      <title>Super-user ODK Aggregate Username</title>
-      <description>Please enter an ODK Aggregate Username:</description>
+      <title>Super-user digi Aggregate Username</title>
+      <description>Please enter an digi Aggregate Username:</description>
       <explanation><![CDATA[The user with this account will always have full permissions on the system.
 
-The first time ODK Aggregate runs, only this user is allowed to log onto the system. Upon first logging in, they should change their password and complete the configuration of ODK Aggregate by specifying additional users and what permissions those users have on the system. This user's password will be set to 'aggregate' upon initial install or upon changing the ODK Aggregate instance name.]]></explanation>
+The first time digi Aggregate runs, only this user is allowed to log onto the system. Upon first logging in, they should change their password and complete the configuration of ODK Aggregate by specifying additional users and what permissions those users have on the system. This user's password will be set to 'aggregate' upon initial install or upon changing the ODK Aggregate instance name.]]></explanation>
       <value></value>
       <default></default>
       <allowEmptyValue>0</allowEmptyValue>

@@ -101,94 +101,94 @@ public class PreferencesSubTab extends AggregateSubTabBase {
     version.setStylePrimaryName(VERSION_STRING_STYLE);
     version.setText(BuildConfig.VERSION);
     add(version);
-
-    HTML labelCredentialsSection = new HTML(GOOGLE_API_CREDENTIALS_LABEL);
-    add(labelCredentialsSection);
-
-    HTML labelCredentialsInfo = new HTML(GOOGLE_API_CREDENTIALS_INFO);
-    labelCredentialsInfo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelCredentialsInfo);
-
-    HTML labelApiKeyHeading = new HTML(GOOGLE_API_KEY_LABEL);
-    labelApiKeyHeading.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiKeyHeading);
-
-    simpleApiKey = new Label();
-    simpleApiKey.setStylePrimaryName(INDENTED_ENTRY_STYLE);
-    add(simpleApiKey);
-
-    HTML labelApiKeyInfo = new HTML(GOOGLE_API_KEY_INFO);
-    labelApiKeyInfo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiKeyInfo);
-
-    HTML labelApiClientIdHeading = new HTML(GOOGLE_API_CLIENT_ID_LABEL);
-    labelApiClientIdHeading.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiClientIdHeading);
-
-    googleApiClientId = new Label();
-    googleApiClientId.setStylePrimaryName(INDENTED_ENTRY_STYLE);
-    add(googleApiClientId);
-
-    HTML labelApiClientIdInfo = new HTML(GOOGLE_API_CLIENT_ID_INFO);
-    labelApiClientIdInfo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiClientIdInfo);
-
-    ServletPopupButton newCredential = new ServletPopupButton(NEW_SERVICE_ACCOUNT_BUTTON_TEXT,
-        NEW_SERVICE_ACCOUNT_TXT, UIConsts.SERVICE_ACCOUNT_PRIVATE_KEY_UPLOAD_ADDR, this,
-        NEW_SERVICE_ACCOUNT_TOOLTIP_TXT, NEW_SERVICE_ACCOUNT_BALLOON_TXT);
-    newCredential.setStylePrimaryName(INDENTED_STYLE);
-    add(newCredential);
-
-    HTML labelCredentialsSectionEnketo = new HTML(ENKETO_API_CREDENTIALS_LABEL);
-    add(labelCredentialsSectionEnketo);
-
-    HTML labelCredentialsInfoEnketo = new HTML(ENKETO_API_CREDENTIALS_INFO);
-    labelCredentialsInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelCredentialsInfoEnketo);
-
-    HTML labelApiKeyHeadingEnketo = new HTML(ENKETO_API_URL_LABEL);
-    labelApiKeyHeadingEnketo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiKeyHeadingEnketo);
-
-    enketoApiUrl = new Label();
-    enketoApiUrl.setStylePrimaryName(INDENTED_ENTRY_STYLE);
-    add(enketoApiUrl);
-
-    HTML labelApiKeyInfoEnketo = new HTML(ENKETO_API_URL_INFO);
-    labelApiKeyInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiKeyInfoEnketo);
-
-    HTML labelApiClientIdHeadingEnketo = new HTML(ENKETO_API_TOKEN);
-    labelApiClientIdHeadingEnketo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiClientIdHeadingEnketo);
-
-    enketoApiToken = new Label();
-    enketoApiToken.setStylePrimaryName(INDENTED_ENTRY_STYLE);
-    add(enketoApiToken);
-
-    HTML labelApiClientIdInfoEnketo = new HTML(ENKETO_API_TOKEN_INFO);
-    labelApiClientIdInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
-    add(labelApiClientIdInfoEnketo);
-
-    ServletPopupButton newEnketoCredential = new ServletPopupButton(
-        NEW_ENKETO_SERVICE_ACCOUNT_BUTTON_TEXT, NEW_ENKETO_SERVICE_ACCOUNT_TXT,
-        UIConsts.ENKETO_SERVICE_ACCOUNT_PRIVATE_KEY_UPLOAD_ADDR, this,
-        NEW_ENKETO_SERVICE_ACCOUNT_TOOLTIP_TXT, NEW_ENKETO_SERVICE_ACCOUNT_BALLOON_TXT);
-    newEnketoCredential.setStylePrimaryName(INDENTED_STYLE);
-    add(newEnketoCredential);
-
-    setCredentialValues();
-    // add(new UpdateGMapsKeyButton(mapsApiKey));
-    // add(new
-    // UpdateGoogleClientCredentialsButton(googleApiClientId.getText()));
-
-    HTML features = new HTML(FEATURES_LABEL);
-    add(features);
-
-    skipMalformedSubmissions = new SkipMalformedSubmissionsCheckbox(
-        Preferences.getSkipMalformedSubmissions(), settingsChange);
-    add(skipMalformedSubmissions);
-
+//
+//    HTML labelCredentialsSection = new HTML(GOOGLE_API_CREDENTIALS_LABEL);
+//    add(labelCredentialsSection);
+//
+//    HTML labelCredentialsInfo = new HTML(GOOGLE_API_CREDENTIALS_INFO);
+//    labelCredentialsInfo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelCredentialsInfo);
+//
+//    HTML labelApiKeyHeading = new HTML(GOOGLE_API_KEY_LABEL);
+//    labelApiKeyHeading.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiKeyHeading);
+//
+//    simpleApiKey = new Label();
+//    simpleApiKey.setStylePrimaryName(INDENTED_ENTRY_STYLE);
+//    add(simpleApiKey);
+//
+//    HTML labelApiKeyInfo = new HTML(GOOGLE_API_KEY_INFO);
+//    labelApiKeyInfo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiKeyInfo);
+//
+//    HTML labelApiClientIdHeading = new HTML(GOOGLE_API_CLIENT_ID_LABEL);
+//    labelApiClientIdHeading.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiClientIdHeading);
+//
+//    googleApiClientId = new Label();
+//    googleApiClientId.setStylePrimaryName(INDENTED_ENTRY_STYLE);
+//    add(googleApiClientId);
+//
+//    HTML labelApiClientIdInfo = new HTML(GOOGLE_API_CLIENT_ID_INFO);
+//    labelApiClientIdInfo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiClientIdInfo);
+//
+//    ServletPopupButton newCredential = new ServletPopupButton(NEW_SERVICE_ACCOUNT_BUTTON_TEXT,
+//        NEW_SERVICE_ACCOUNT_TXT, UIConsts.SERVICE_ACCOUNT_PRIVATE_KEY_UPLOAD_ADDR, this,
+//        NEW_SERVICE_ACCOUNT_TOOLTIP_TXT, NEW_SERVICE_ACCOUNT_BALLOON_TXT);
+//    newCredential.setStylePrimaryName(INDENTED_STYLE);
+//    add(newCredential);
+//
+//    HTML labelCredentialsSectionEnketo = new HTML(ENKETO_API_CREDENTIALS_LABEL);
+//    add(labelCredentialsSectionEnketo);
+//
+//    HTML labelCredentialsInfoEnketo = new HTML(ENKETO_API_CREDENTIALS_INFO);
+//    labelCredentialsInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelCredentialsInfoEnketo);
+//
+//    HTML labelApiKeyHeadingEnketo = new HTML(ENKETO_API_URL_LABEL);
+//    labelApiKeyHeadingEnketo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiKeyHeadingEnketo);
+//
+//    enketoApiUrl = new Label();
+//    enketoApiUrl.setStylePrimaryName(INDENTED_ENTRY_STYLE);
+//    add(enketoApiUrl);
+//
+//    HTML labelApiKeyInfoEnketo = new HTML(ENKETO_API_URL_INFO);
+//    labelApiKeyInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiKeyInfoEnketo);
+//
+//    HTML labelApiClientIdHeadingEnketo = new HTML(ENKETO_API_TOKEN);
+//    labelApiClientIdHeadingEnketo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiClientIdHeadingEnketo);
+//
+//    enketoApiToken = new Label();
+//    enketoApiToken.setStylePrimaryName(INDENTED_ENTRY_STYLE);
+//    add(enketoApiToken);
+//
+//    HTML labelApiClientIdInfoEnketo = new HTML(ENKETO_API_TOKEN_INFO);
+//    labelApiClientIdInfoEnketo.setStylePrimaryName(INDENTED_STYLE);
+//    add(labelApiClientIdInfoEnketo);
+//
+//    ServletPopupButton newEnketoCredential = new ServletPopupButton(
+//        NEW_ENKETO_SERVICE_ACCOUNT_BUTTON_TEXT, NEW_ENKETO_SERVICE_ACCOUNT_TXT,
+//        UIConsts.ENKETO_SERVICE_ACCOUNT_PRIVATE_KEY_UPLOAD_ADDR, this,
+//        NEW_ENKETO_SERVICE_ACCOUNT_TOOLTIP_TXT, NEW_ENKETO_SERVICE_ACCOUNT_BALLOON_TXT);
+//    newEnketoCredential.setStylePrimaryName(INDENTED_STYLE);
+//    add(newEnketoCredential);
+//
+//    setCredentialValues();
+//    // add(new UpdateGMapsKeyButton(mapsApiKey));
+//    // add(new
+//    // UpdateGoogleClientCredentialsButton(googleApiClientId.getText()));
+//
+//    HTML features = new HTML(FEATURES_LABEL);
+//    add(features);
+//
+//    skipMalformedSubmissions = new SkipMalformedSubmissionsCheckbox(
+//        Preferences.getSkipMalformedSubmissions(), settingsChange);
+//    add(skipMalformedSubmissions);
+//
     add(buildVersionNote(this));
   }
 
